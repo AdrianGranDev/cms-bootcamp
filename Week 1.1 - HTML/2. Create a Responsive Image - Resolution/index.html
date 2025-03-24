@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Create a Responsive Image - Resolution</title>
+	<img class="content"/>
 
 	<style>
 		*,
@@ -14,11 +15,31 @@
 			margin: 0;
 			padding: 0;
 		}
-
 		img {
 			display: block;
 			width: 100%;
 			height: auto;
+			content: url(https://placehold.co/400x180)
+		}
+		@media (width >= 640px) {
+			.content {
+				content: url(https://placehold.co/800x360);
+			}
+		}
+		@media (width >= 1024px) {
+			.content {
+				content: url(https://placehold.co/1200x540);
+			}
+		}
+		@media (width >= 1440px) {
+			.content {
+				content: url(https://placehold.co/1600x720);
+			}
+		}
+		@media (width >= 1800px) {
+			.content {
+				content: url(https://placehold.co/2000x900);
+			}
 		}
 	</style>
 </head>

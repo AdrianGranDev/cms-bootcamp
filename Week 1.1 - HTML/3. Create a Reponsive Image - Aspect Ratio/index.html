@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Create a Responsive Image - Aspect Ratio</title>
 
+	<img class="content"/>
 	<style>
 		*,
 		*::before,
@@ -19,6 +20,17 @@
 			display: block;
 			width: 100%;
 			height: auto;
+			content: url(https://placehold.co/540x800);
+		}
+		@media (width >= 640px) {
+			.content {
+				content: url(https://placehold.co/1200x900);
+			}
+		}
+		@media (width >= 1024px) {
+			.content {
+				content: url(https://placehold.co/1600x720);
+			}
 		}
 	</style>
 </head>
