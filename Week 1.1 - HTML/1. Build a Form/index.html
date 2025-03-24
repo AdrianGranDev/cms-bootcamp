@@ -7,8 +7,10 @@
 </head>
 <body>
 	<form method="submit" action="/login/" >
-		<input type="email" required />
-		<input type="password" required />
+		<label for="emailInput">Email</label>
+		<input name="email" id="emailInput" placeholder="example@granicus.com" aria-label="email" type="email" required />
+		<label for="passwordInput">Password</label>
+		<input name="password" id="passwordInput" aria-label="password" type="password" required />
 		<input type="submit"/>
 	</form>
 
