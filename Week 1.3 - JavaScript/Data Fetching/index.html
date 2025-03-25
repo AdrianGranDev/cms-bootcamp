@@ -19,10 +19,14 @@
 		}
 
 		const doStuf = async () => {
-			const resp = await fetch('https://ghibliapi.vercel.app/films');
-			const data = await resp.json();
-			let element = document.querySelector('.movies');
-			document.querySelector('.movies').innerHTML = data.map(createElement).join('')
+			try {
+				const resp = await fetch('https://ghibliapi.vercel.app/films');
+				const data = await resp.json();
+				let element = document.querySelector('.movies');
+				document.querySelector('.movies').innerHTML = data.map(createElement).join('')
+			} catch (e) {
+				document.querySelector('.movies').innerHTML = "<li>No films to show</li>"
+			}
 		}
 		doStuf()
 	</script>

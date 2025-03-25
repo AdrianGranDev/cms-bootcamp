@@ -10,7 +10,7 @@
 	<script>
 		const information = getInformation('asdf');
 		
-		console.log(information);
+		console.log(information||'Error: Invalid option selected...');
 		// Rewrite this function to replace the if/else logic with a map lookup.
 		function getInformation(key) {
 			const data = {
@@ -18,7 +18,7 @@
 				time:'21:13 PM',
 				mood:'Powerful, spirited...'
 			}
-			return data[key]||'Error: Invalid option selected...';
+			return data[key];
 		}
 	</script>
 
