@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Create a Responsive Image - Resolution</title>
-	<img class="content"/>
 
 	<style>
 		*,
@@ -19,33 +18,20 @@
 			display: block;
 			width: 100%;
 			height: auto;
-			content: url(https://placehold.co/400x180)
-		}
-		@media (width >= 640px) {
-			.content {
-				content: url(https://placehold.co/800x360);
-			}
-		}
-		@media (width >= 1024px) {
-			.content {
-				content: url(https://placehold.co/1200x540);
-			}
-		}
-		@media (width >= 1440px) {
-			.content {
-				content: url(https://placehold.co/1600x720);
-			}
-		}
-		@media (width >= 1800px) {
-			.content {
-				content: url(https://placehold.co/2000x900);
-			}
 		}
 	</style>
 </head>
 <body>
 	
 	<!-- Add your code here -->
+	<picture>
+		<source media="(min-width:1800px)" srcset="https://placehold.co/2000x900">
+		<source media="(min-width:1440px)" srcset="https://placehold.co/1600x720">
+		<source media="(min-width:1024px)" srcset="https://placehold.co/1200x540">
+		<source media="(min-width:640px)" srcset="https://placehold.co/800x360">
+		<img src="https://placehold.co/400x180" alt="Bootcamp">
+	</picture>
 
+	
 </body>
 </html>
