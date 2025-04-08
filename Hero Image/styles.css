@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    min-height: 322px;
+}
+
+img {
+    aspect-ratio: 2.4 / 1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+picture {
+    display: flex;
+    background-color: #2C1C0000;
+}
+
+.hero {
+    width: calc(100% - 80px);
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    padding: 43px 40px;
+    border-bottom: 5px dotted #FFBF25;
+    margin-bottom: 5px;
+}
+
+.hero .content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.content > * {
+    flex: 1 1 100%;
+}
+
+.content > h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 35px;
+}
+
+.content > span {
+    margin: 0;
+    font-size: 14;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.content > p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.content > a {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 20px;
+    text-decoration: none; 
+}
+
+
+
+@media (max-width:1024px) {
+    
+    img {
+        aspect-ratio: 1 / 0.86;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .hero {
+        width: calc(100% - 40px);
+        padding: 27px 20px;
+        border-width: 5px;
+        margin-bottom: 5px;
+    }
+
+    
+    .content > span {
+        font-size: 12;
+    }
+    
+    .content > h1 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .content > p {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    
+    
+    .content > a {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+
+/* 
+h1, p {
+    margin: 0 0;
+}
+
+header {
+    font-weight: 700;
+    border-bottom: 1px solid #E8E8E8;
+    padding-block: 10px;
+    margin: 0 120px;
+}
+
+picture > label {
+    color: #fff;
+    position: absolute;
+    margin: 30px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 15px 30px;
+}
+
+button {
+    margin: 0 30px;
+    padding-inline: 30px;
+    padding-block: 10px;
+    align-self: flex-start;
+    border-radius: 30px;
+    border-color: #2877F7;
+    border-width: 3px;
+    color: #2877F7;
+    background-color: #fff;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.content > span {
+    font-size: 12px;
+    font-weight: 700;
+} */
