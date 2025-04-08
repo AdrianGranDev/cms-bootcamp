@@ -75,10 +75,10 @@ picture {
 
 
 
-@media (max-width:1024px) {
+@media (max-width:530px) {
     
     img {
-        aspect-ratio: 1 / 0.86;
+        /* aspect-ratio: 1 / 0.86; */
         width: 100%;
         height: auto;
         object-fit: cover;
@@ -92,6 +92,9 @@ picture {
         margin-bottom: 5px;
     }
 
+    .container {
+        min-height: 322px;
+    }
     
     .content > span {
         font-size: 12;
