@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+h1, p {
+    margin: 0 0;
+}
+
+header {
+    font-weight: 700;
+    border-bottom: 1px solid #3D545A33;
+    padding-block: 21px;
+    margin: 0 140px;
+}
+
+.glide__track {
+    width: 100%;
+}
+
+
+.controller {
+    pointer-events: none;
+    width: calc(100% + 144px);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 25%;
+    transform: translate(-72px);
+}
+
+.controller > * {
+    pointer-events: all;
+}
+
+.arrowBtn {
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    background-color: #146EFF;
+    border: none;
+}
+
+.arrowRight {
+    color: #FFCE58;
+    font-size: 20px;
+    margin-bottom: 1px;
+    margin-left: 2px;
+}
+
+.arrowLeft {
+    color: #FFCE58;
+    font-size: 20px;
+    margin-bottom: 1px;
+    margin-right: 2px;
+}
+
+
+picture > img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.glide {
+    margin: 80px 140px;
+    padding-bottom: 25px;
+    display: flex;
+    width: calc(100% - 280px);
+}
+
+
+.glide__slide {
+    max-width: 374px;
+}
+
+.readmeBTN {
+    margin-top: 2px;
+    margin-left: 15px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.readmeBTN > * {
+    color: #2877F7;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    gap:12px;
+}
+
+.content > span {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.content > h1 {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 26px;
+
+}
+
+.content > p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.content > .timeRead {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+.fa-clock {
+    color: #2877F7;
+    margin-right: 3px;
+}
+
+
+
+@media (max-width: 768px){
+
+    .glide__slide {
+        max-width: none;
+    }
+
+}
+
+
+@media (max-width: 640px){
+
+    header {
+        font-size: 14px;
+        padding-block: 15px;
+        margin: 0 20px;
+    }
+    
+
+    .glide {
+        margin: 30px 20px;
+        padding-bottom: 25px;
+        display: flex;
+        width: calc(100% - 40px);
+    }
+
+    .controller {
+        width: 100%;
+        top: 100%;
+        justify-content: center;
+        gap: 30px;
+        transform: none;
+    }
+
+
+    .content {
+        margin: 10px;
+        gap:10px;
+    }
+    
+    .content > span {
+        font-weight: 700;
+        font-size: 14px;
+    }
+    
+    .content > h1 {
+        font-size: 22px;
+        line-height: 23px;
+    
+    }
+    
+    .content > p {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    
+    .content > .timeRead {
+        font-size: 13px;
+    }
+    
+    
+    .fa-clock {
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    
+
+
+
+}

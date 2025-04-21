@@ -17,7 +17,7 @@ header {
 /* 1910 */
 .container { 
     position: relative;
-    margin: 80px  30px;
+    margin: 80px 30px;
     display: flex;
     flex-wrap: wrap;
     gap:30px
@@ -26,6 +26,7 @@ header {
 .card {
     display: flex;
     position: relative;
+    max-width: 322.5px;
     flex: 1 1 calc(25% - 30px);
     flex-direction: column;
     justify-content: center;
@@ -81,6 +82,13 @@ picture > img {
 }
 
 
+
+@media (min-width: 1440px) {
+    .container {
+        margin: 80px 0px;
+        justify-content: space-evenly;
+    }
+}
 
 
 
