@@ -1,7 +1,11 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 h1, p {
     margin: 0 0;
@@ -13,14 +17,16 @@ header {
     border-bottom: 1px solid #3D545A33;
     padding-block: 21px;
     margin: 0 140px;
+    width: calc(100% - 280px);
 }
 /* 1910 */
-.container { 
+.container {
     position: relative;
     margin: 80px 30px;
     display: flex;
     flex-wrap: wrap;
-    gap:30px
+    gap:30px;
+    max-width: 1440px;
 }
 
 .card {
@@ -98,6 +104,7 @@ picture > img {
         font-size: 14px;
         padding-block: 15px;
         margin: 0 20px;
+        width: calc(100% - 38px);
     }
 
     .container {
@@ -105,6 +112,7 @@ picture > img {
     }
 
     .card {
+        max-width: 100%;
         flex: 1 1 100%;
         border-radius: 60% / 100%;
     }
