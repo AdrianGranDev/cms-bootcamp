@@ -1,13 +1,23 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
+body > *{
+    max-width: calc(1440px - 280px);
+}
+
 
 h1, p {
     margin: 0 0;
 }
 
 header {
+    width: 100%;
     font-weight: 700;
     border-bottom: 1px solid #3D545A33;
     padding-block: 21px;
@@ -120,10 +130,18 @@ picture > img {
 
 .fa-clock {
     color: #2877F7;
-    margin-right: 3px;
+    margin-right: 4px;
 }
 
+.glide[data-glide-dragging="false"] {
+    pointer-events: none;
+  }
 
+@media (max-width:1440px) {
+    body > *{
+        max-width: calc(100% - 280px);
+    }
+}
 
 @media (max-width: 768px){
 
@@ -136,6 +154,10 @@ picture > img {
 
 @media (max-width: 640px){
 
+    body > *{
+        max-width: calc(100% - 40px);
+    }
+
     header {
         font-size: 14px;
         padding-block: 15px;
@@ -145,7 +167,7 @@ picture > img {
 
     .glide {
         margin: 30px 20px;
-        padding-bottom: 25px;
+        padding-bottom: 20px;
         display: flex;
         width: calc(100% - 40px);
     }
@@ -179,6 +201,10 @@ picture > img {
         font-size: 15px;
         line-height: 21px;
     }
+
+    .content > p:nth-of-type(2) {
+        margin-block: 5px;
+    }
     
     .content > .timeRead {
         font-size: 13px;
@@ -186,11 +212,15 @@ picture > img {
     
     
     .fa-clock {
-        margin-right: 0px;
         margin-bottom: 5px;
     }
     
-
+    .readmeBTN {
+        margin-top: 0px;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+    
 
 
 }
