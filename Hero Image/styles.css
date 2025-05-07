@@ -11,7 +11,6 @@ body {
 }
 
 img {
-    aspect-ratio: 2.4 / 1;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -20,11 +19,9 @@ img {
 
 picture {
     display: flex;
-    background-color: #2C1C0000;
 }
 
 .hero {
-    width: calc(100% - 80px);
     display:flex;
     color: #FFFFFF;
     position: absolute;
@@ -32,9 +29,25 @@ picture {
     padding: 43px 40px;
     border-bottom: 5px dotted #FFBF25;
     margin-bottom: 5px;
+    overflow: hidden;
 }
 
+.hero .content::before {
+    content: "";
+    background: radial-gradient(50% 50% at 50% 50%, rgba(44, 28, 0, 0.8) 0%, rgba(44, 28, 0, 0) 70%);
+    height: 200%;
+    width: 150%;
+    pointer-events: none;
+    position: absolute;
+    bottom: 0%;
+    left: -20%;
+    transform: translate(-20%, 30%);
+    z-index: -1;
+}
+
+
 .hero .content {
+    z-index: 0;
     display: flex;
     flex-wrap: wrap;
     max-width: 60%;
@@ -53,7 +66,7 @@ picture {
 
 .content > span {
     margin: 0;
-    font-size: 14;
+    font-size: 14px;
     font-weight: 700;
     line-height: 22px;
 }
@@ -68,25 +81,22 @@ picture {
 .content > a {
     color: #FFFFFF;
     margin: 0;
+    margin-top: 8px;
     font-size: 16px;
     font-weight: 900;
     line-height: 20px;
     text-decoration: none; 
 }
 
+.fa-angles-right {
+    color: #2877F7;
+    margin-left: 5px;
+}
 
 
 @media (max-width:776px) {
-    
-    img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        object-position: bottom;
-    }
 
     .hero {
-        width: calc(100% - 40px);
         padding: 27px 20px;
         border-width: 5px;
         margin-bottom: 5px;
@@ -97,7 +107,7 @@ picture {
     }
     
     .content > span {
-        font-size: 12;
+        font-size: 12px;
     }
     
     .content > h1 {
